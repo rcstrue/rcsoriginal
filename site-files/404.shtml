@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 - Page Not Found</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f0f17;
+      --surface: #161622;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --primary: #a78bfa;
+      --primary-dark: #7c3aed;
+      --accent: #f472b6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100dvh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', system-ui, sans-serif;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 20% 30%, rgba(167,139,250,0.07) 0%, transparent 25%),
+        radial-gradient(circle at 80% 70%, rgba(244,114,182,0.06) 0%, transparent 35%);
+    }
+
+    .container {
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+      position: relative;
+    }
+
+    .content {
+      text-align: center;
+      max-width: 620px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .error-code {
+      font-family: 'Orbitron', monospace;
+      font-size: clamp(9rem, 22vw, 16rem);
+      font-weight: 700;
+      line-height: 0.82;
+      background: linear-gradient(90deg, var(--primary), var(--accent), var(--primary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.04em;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 0 60px rgba(167,139,250,0.25);
+      user-select: none;
+    }
+
+    .glitch {
+      position: relative;
+    }
+
+    .glitch::before,
+    .glitch::after {
+      content: "404";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+    }
+
+    .glitch::before {
+      left: 2px;
+      text-shadow: -2px 0 var(--accent);
+      animation: glitch-1 3s infinite linear alternate-reverse;
+    }
+
+    .glitch::after {
+      left: -2px;
+      text-shadow: 2px 0 var(--primary);
+      animation: glitch-2 2.4s infinite linear alternate-reverse;
+    }
+
+    @keyframes glitch-1 {
+      0%, 100% { clip-path: inset(0 0 0 0); }
+      2%, 48%  { clip-path: inset(2% 0 8% 0); }
+      50%, 96% { clip-path: inset(6% 0 4% 0); }
+    }
+
+    @keyframes glitch-2 {
+      0%, 100% { clip-path: inset(0 0 0 0); }
+      10%, 42% { clip-path: inset(4% 0 12% 0); }
+      44%, 88% { clip-path: inset(8% 0 6% 0); }
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      margin-bottom: 1.2rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      justify-content: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.9rem 1.8rem;
+      font-size: 1.05rem;
+      font-weight: 500;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.28s ease;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: white;
+      box-shadow: 0 10px 30px -10px rgba(167,139,250,0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px -12px rgba(167,139,250,0.55);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-outline:hover {
+      background: rgba(167,139,250,0.08);
+      transform: translateY(-2px);
+    }
+
+    .floating-thing {
+      position: absolute;
+      border-radius: 50%;
+      background: var(--primary);
+      filter: blur(60px);
+      opacity: 0.12;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .thing-1 { width: 380px; height: 380px; top: 10%; left: 8%; }
+    .thing-2 { width: 480px; height: 480px; bottom: 5%; right: 12%; background: var(--accent); }
+
+    @media (max-width: 640px) {
+      .btn-group { flex-direction: column; }
+      .btn { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="floating-thing thing-1"></div>
+  <div class="floating-thing thing-2"></div>
+
+  <div class="content">
+    <div class="error-code glitch">404</div>
+    
+    <h2>Looks like you're lost in space</h2>
+    
+    <p>
+      The page you're looking for was either moved, deleted,<br class="hide-mobile">
+      or maybe it just doesn't want to be found today.
+    </p>
+
+    <div class="btn-group">
+      <a href="/" class="btn btn-primary">← Return to Home</a>
+      <a href="/#footer" class="btn btn-outline">Explore Something Else</a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
