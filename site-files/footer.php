@@ -10,7 +10,7 @@
                             <div class="col-sm-6">
                                 <div class="footer-info">
                                     <h3><strong><span style="font-size:36px; color:#431f6e;">RCS</span></strong></h3>
-                                    <p>A well known name for Facility Management and Security Services</p>
+                                    <p>A well known name for Facility Management Services</p>
 
                                     <h4>Corporate Office</h4>
                                     <p>110, 3rd Floor, Someshwar Square,<br>
@@ -101,8 +101,6 @@
     <script src="files/waypoints.min.js"></script>
     <script src="files/counterup.min.js"></script>
     <script src="files/owl.carousel.min.js"></script>
-    <script src="files/isotope.pkgd.min.js"></script>
-    <script src="files/lightbox.min.js"></script>
     <!-- Template Main Javascript File -->
     <script src="files/main.js"></script>
 

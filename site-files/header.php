@@ -26,7 +26,6 @@
     <link href="files/animate.min.css" rel="stylesheet">
     <link href="files/ionicons.min.css" rel="stylesheet">
     <link href="files/owl.carousel.min.css" rel="stylesheet">
-    <link href="files/lightbox.min.css" rel="stylesheet">
 
     <!-- Main Stylesheet File -->
     <link href="files/style.css" rel="stylesheet">
