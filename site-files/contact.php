@@ -52,7 +52,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $body .= "Message:\n$message\n";
 
         // ✅ Send mail
-        if (mail($to, $subject, $body, $headers)) {
+        $mailSuccess = mail($to, "Website: $subject", $body, $headers);
+
+        // =========================
+        // AUTO REPLY EMAIL TO USER
+        // =========================
+        if ($mailSuccess) {
+
+            $userSubject = "Thank you for contacting RCS True Facilities";
+
+            $userMessage = "Dear $name,\n\n";
+            $userMessage .= "Thank you for contacting RCS True Facilities Pvt Ltd.\n";
+            $userMessage .= "We have received your message and our team will get back to you shortly.\n\n";
+            $userMessage .= "Your submitted details:\n";
+            $userMessage .= "Subject: $subject\n";
+            $userMessage .= "Message: $message\n\n";
+            $userMessage .= "Regards,\nRCS True Facilities Team";
+
+            $userHeaders  = "From: RCS True Facilities <no-reply@rcsfacility.com>\r\n";
+            $userHeaders .= "Content-Type: text/plain; charset=UTF-8\r\n";
+
+            mail($email, $userSubject, $userMessage, $userHeaders);
+        }
+
+        if ($mailSuccess) {
             echo json_encode([
                 'status' => 'success',
                 'message' => 'Thank you for contacting us. We will reach you shortly.'
