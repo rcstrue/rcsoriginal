@@ -22,9 +22,8 @@
     <link href="files/bootstrap.min.css" rel="stylesheet">
 
     <!-- Libraries CSS Files -->
-    <link href="files/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="files/animate.min.css" rel="stylesheet">
-    <link href="files/ionicons.min.css" rel="stylesheet">
     <link href="files/owl.carousel.min.css" rel="stylesheet">
 
     <!-- Main Stylesheet File -->
