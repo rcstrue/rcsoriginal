@@ -58,9 +58,8 @@
                     <li class="drop-down"><a href="#">Services</a>
                         <ul>
                             <li><a href="facility-management-services.php">Facility Management Services</a></li>
-                            <li><a href="security-management-services.php">Security &amp; Safety Management</a></li>
                             <li><a href="retail-consultancy.php">Retail Consultancy Services</a></li>
-                            <li><a href="marcomm.php">Marcom Solutions</a></li>
+                            <li><a href="merchandising.php">Merchandising</a></li>
                         </ul>
                     </li>
                     <li><a href="#footer">Contact Us</a></li>

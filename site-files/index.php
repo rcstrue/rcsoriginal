@@ -1,7 +1,7 @@
 <?php
 $page_title = 'RCS True Facilities Pvt Ltd - Facility & Safety Management';
-$meta_keywords = 'facility management, security services, manpower, staffing, housekeeping, India';
-$meta_description = 'RCS True Facilities Pvt Ltd - One of the leading facility management and safety service provider in India. Providing excellent soft services, technical services, and staffing solutions.';
+$meta_keywords = 'facility management, manpower, staffing, housekeeping, retail consultancy, merchandising, India';
+$meta_description = 'RCS True Facilities Pvt Ltd - One of the leading facility management service provider in India. Providing excellent soft services, technical services, staffing solutions, retail consultancy and merchandising.';
 $canonical_url = 'http://rcsfacility.com/index.php';
 $active_page = 'home';
 include 'header.php';
@@ -78,8 +78,8 @@ include 'header.php';
                     <div class="col-md-6 wow bounceInUp" data-wow-duration="1.4s">
                         <div class="box">
                             <div class="icon" style="background: #fceef3;"></div>
-                            <h4 class="title"><a href="facility-management-services.php">Facility Management &amp; Safety Services</a></h4>
-                            <p class="description">We provide a complete facility management solution to help your workplace operate smoothly. Our facility management services include Housekeeping, Security, Office Boys, Multi-technicians among others.</p>
+                            <h4 class="title"><a href="facility-management-services.php">Facility Management Services</a></h4>
+                            <p class="description">We provide a complete facility management solution to help your workplace operate smoothly. Our facility management services include Housekeeping, Office Boys, Multi-technicians among others.</p>
                         </div>
                     </div>
 
@@ -95,17 +95,9 @@ include 'header.php';
                 <div class="row">
                     <div class="col-md-6 wow bounceInUp" data-wow-duration="1.4s">
                         <div class="box">
-                            <div class="icon" style="background: #fff0da;"></div>
-                            <h4 class="title"><a href="security-management-services.php">Safety &amp; Security</a></h4>
-                            <p class="description">RCS is a well-experienced organization completely devoted to security and safety. Our commitment to providing reliable security &amp; ensuring safety measures are in place to take care of our client and customers.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                        <div class="box">
                             <div class="icon" style="background: #eafde7;"></div>
-                            <h4 class="title"><a href="marcomm.php">Marcom</a></h4>
-                            <p class="description">With the incoming era of changes, we can see a continuous movement in the public's behaviour &amp; perception as well as market dynamics. To counter the same, we provide 360 Integrated Marcom Solutions to our clients for best performance of their marketing funds.</p>
+                            <h4 class="title"><a href="merchandising.php">Merchandising</a></h4>
+                            <p class="description">Merchandising is essential to ensure your products and brand get the exposure they deserve. We provide brand merchandise, corporate merchandise and retail merchandise services.</p>
                         </div>
                     </div>
                 </div>
